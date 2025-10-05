@@ -5,13 +5,23 @@
 
 A robust cross-platform file compression tool with built-in self-healing capabilities, designed to provide a reliable and user-friendly file compression/decompression experience.
 
-## 📁 Installation
+### Option: Build from Source
 
-You can download the precompiled installer directly from the [installer](/installer) directory:
+If you prefer to build the application yourself:
 
-- **Windows Installer**: [SelfHealingApp_1.0.0_Setup.exe](/installer/SelfHealingApp_1.0.0_Setup.exe)
+1. Clone this repository
+2. Follow the development instructions below to build the application
+3. The installer will be generated in the `installer` directory after a successful build
 
-The installer supports the following languages:
+### Option: Direct Download
+
+You can also download the precompiled installer directly using this link:
+
+- **Windows Installer**: [SelfHealingApp_1.0.0_Setup.exe](https://github.com/Yuanyuan5510/self-healing-app/releases/download/SelfHealingApp/SelfHealingApp_1.0.0_Setup.exe)
+
+### Supported Languages
+
+The application installer supports the following languages:
 - English
 - Simplified Chinese
 - Spanish
