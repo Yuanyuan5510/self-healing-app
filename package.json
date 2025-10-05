@@ -1,0 +1,56 @@
+{
+  "name": "self-healing-app",
+  "version": "1.0.0",
+  "description": "A self-healing file compression tool with fallback and compatibility modes.",
+  "main": "electron.js",
+  "scripts": {
+    "start": "set ELECTRON_DISABLE_SECURITY_WARNINGS=true && set ELECTRON_CRASH_REPORTER_COMPRESS=true && electron .",
+    "package": "electron-builder --dir"
+  },
+  "build": {
+    "appId": "self-healing-app",
+    "productName": "Self-Healing App",
+    "files": [
+      "main-app/**",
+      "fallback-app/**",
+      "compatibility-app/**",
+      "shared/**",
+      "gui/**",
+      "electron.js",
+      "package.json"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "asar": false,
+    "asarUnpack": [
+      "**/node_modules"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "exe",
+          "arch": "x64"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ]
+    }
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16"
+  },
+  "devDependencies": {
+    "electron": "^38.1.2",
+    "electron-builder": "^26.0.12"
+  }
+}
