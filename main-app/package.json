@@ -1,0 +1,25 @@
+{
+  "name": "main-app",
+  "version": "1.0.0",
+  "description": "Main application for self-healing system",
+  "main": "bin/app.js",
+  "scripts": {
+    "start": "node bin/app.js",
+    "dev": "nodemon bin/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "main",
+    "self-healing",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

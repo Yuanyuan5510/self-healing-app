@@ -1,0 +1,9 @@
+{
+  "name": "fallback-app",
+  "version": "1.0.0",
+  "description": "Fallback application for self-healing-app to provide basic archiving.",
+  "main": "fallback.js",
+  "scripts": {
+    "start": "node fallback.js"
+  }
+}
